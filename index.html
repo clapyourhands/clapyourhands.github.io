@@ -1,319 +1,137 @@
 <!DOCTYPE html>
 <html>
-    <title>W3.CSS Template</title>
-    <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-            <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-                <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-                        <style>
-                            body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
-                            body, html {
-                                height: 100%;
-                                color: #777;
-                                line-height: 1.8;
-                            }
-                        
-                        /* Create a Parallax Effect */
-                        .bgimg-1, .bgimg-2, .bgimg-3 {
-                            background-attachment: fixed;
-                            background-position: center;
-                            background-repeat: no-repeat;
-                            background-size: cover;
-                        }
-                        
-                        /* First image (Logo. Full height) */
-                        .bgimg-1 {
-                            background-image: url('https://i.imgur.com/rbY8GEO.jpg');
-                            min-height: 100%;
-                        }
-                        
-                        /* Second image (Portfolio) */
-                        .bgimg-2 {
-                            background-image: url("/w3images/parallax2.jpg");
-                            min-height: 400px;
-                        }
-                        
-                        /* Third image (Contact) */
-                        .bgimg-3 {
-                            background-image: url("/w3images/parallax3.jpg");
-                            min-height: 400px;
-                        }
-                        
-                        .w3-wide {letter-spacing: 10px;}
-                        .w3-hover-opacity {cursor: pointer;}
-                        
-                        /* Turn off parallax scrolling for tablets and phones */
-                        @media only screen and (max-device-width: 1024px) {
-                            .bgimg-1, .bgimg-2, .bgimg-3 {
-                                background-attachment: scroll;
-                            }
-                        }
-                        </style>
-                        <body>
-                            
-                            <!-- Navbar (sit on top) -->
-                            <div class="w3-top">
-                                <div class="w3-bar" id="myNavbar">
-                                    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
-                                        <i class="fa fa-bars"></i>
-                                    </a>
-                                    <a href="#home" class="w3-bar-item w3-button">HOME</a>
-                                    <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
-                                    <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
-                                    <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
-                                    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
-                                        <i class="fa fa-search"></i>
-                                    </a>
-                                </div>
-                                
-                                <!-- Navbar on small screens -->
-                                <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
-                                    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
-                                    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
-                                    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
-                                    <a href="#" class="w3-bar-item w3-button">SEARCH</a>
-                                </div>
-                            </div>
-                            
-                            <!-- First Parallax Image with Logo Text -->
-                            <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
-                                <div class="w3-display-middle" style="white-space:nowrap;">
-                                    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">BEARS <span class="w3-hide-small">WITH</span> ME</span>
-                                </div>
-                            </div>
-                            
-                            <!-- Container (About Section) -->
-                            <div class="w3-content w3-container w3-padding-64" id="about">
-                                <h3 class="w3-center">ABOUT ME</h3>
-                                <p class="w3-center"><em>I love photography</em></p>
-                                <p>We have created a fictional "personal" website/blog, and our fictional character is a hobby photographer. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
-                                qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                                <div class="w3-row">
-                                    <div class="w3-col m6 w3-center w3-padding-large">
-                                        <p><b><i class="fa fa-user w3-margin-right"></i>Applejack</b></p><br>
-                                        <img src="https://i.imgur.com/iytXg0o.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Hi, my name is Applejack!" width="500" height="333">
-                                            </div>
-                                    
-                                    <!-- Hide this text on small devices -->
-                                    <div class="w3-col m6 w3-hide-small w3-padding-large">
-                                        <p><h1>Hi, my name is Applejack!</h1></p>
-                                    </div>
-                                </div>
-                                <div class="w3-row">
-                                    <div class="w3-col m6 w3-center w3-padding-large">
-                                        <p><b><i class="fa fa-user w3-margin-right"></i>Josh Kwa</b></p><br>
-                                        <img src="https://i.imgur.com/3gvokLf.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Snacks!" width="500" height="333">
-                                            </div>
-                                    
-                                    <!-- Hide this text on small devices -->
-                                    <div class="w3-col m6 w3-hide-small w3-padding-large">
-                                        <p><h1>Snacks!</h1></p>
-                                    </div>
-                                </div>
-                                <p class="w3-large w3-center w3-padding-16">Im really good at:</p>
-                                <p class="w3-wide"><i class="fa fa-camera"></i>Photography</p>
-                                <div class="w3-light-grey">
-                                    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%">90%</div>
-                                </div>
-                                <p class="w3-wide"><i class="fa fa-laptop"></i>Web Design</p>
-                                <div class="w3-light-grey">
-                                    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:85%">85%</div>
-                                </div>
-                                <p class="w3-wide"><i class="fa fa-photo"></i>Photoshop</p>
-                                <div class="w3-light-grey">
-                                    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:75%">75%</div>
-                                </div>
-                            </div>
-                            
-                            <div class="w3-row w3-center w3-dark-grey w3-padding-16">
-                                <div class="w3-quarter w3-section">
-                                    <span class="w3-xlarge">14+</span><br>
-                                    Partners
-                                </div>
-                                <div class="w3-quarter w3-section">
-                                    <span class="w3-xlarge">55+</span><br>
-                                    Projects Done
-                                </div>
-                                <div class="w3-quarter w3-section">
-                                    <span class="w3-xlarge">89+</span><br>
-                                    Happy Clients
-                                </div>
-                                <div class="w3-quarter w3-section">
-                                    <span class="w3-xlarge">150+</span><br>
-                                    Meetings
-                                </div>
-                            </div>
-                            
-                            <!-- Second Parallax Image with Portfolio Text -->
-                            <div class="bgimg-2 w3-display-container w3-opacity-min">
-                                <div class="w3-display-middle">
-                                    <span class="w3-xxlarge w3-text-white w3-wide">PORTFOLIO</span>
-                                </div>
-                            </div>
-                            
-                            <!-- Container (Portfolio Section) -->
-                            <div class="w3-content w3-container w3-padding-64" id="portfolio">
-                                <h3 class="w3-center">MY WORK</h3>
-                                <p class="w3-center"><em>Here are some of my latest lorem work ipsum tipsum.<br> Click on the images to make them bigger</em></p><br>
-                                
-                                <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
-                                <div class="w3-row-padding w3-center">
-                                    <div class="w3-col m3">
-                                        <img src="/w3images/p1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains">
-                                            </div>
-                                    
-                                    <div class="w3-col m3">
-                                        <img src="/w3images/p2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Coffee beans">
-                                            </div>
-                                    
-                                    <div class="w3-col m3">
-                                        <img src="/w3images/p3.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Bear closeup">
-                                            </div>
-                                    
-                                    <div class="w3-col m3">
-                                        <img src="/w3images/p4.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Quiet ocean">
-                                            </div>
-                                </div>
-                                
-                                <div class="w3-row-padding w3-center w3-section">
-                                    <div class="w3-col m3">
-                                        <img src="/w3images/p5.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist">
-                                            </div>
-                                    
-                                    <div class="w3-col m3">
-                                        <img src="/w3images/p6.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="My beloved typewriter">
-                                            </div>
-                                    
-                                    <div class="w3-col m3">
-                                        <img src="/w3images/p7.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Empty ghost train">
-                                            </div>
-                                    
-                                    <div class="w3-col m3">
-                                        <img src="/w3images/p8.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Sailing">
-                                            </div>
-                                    <button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">LOAD MORE</button>
-                                </div>
-                            </div>
-                            
-                            <!-- Modal for full size images on click-->
-                            <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
-                                <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
-                                <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-                                    <img id="img01" class="w3-image">
-                                        <p id="caption" class="w3-opacity w3-large"></p>
-                                        </div>
-                            </div>
-                            
-                            <!-- Third Parallax Image with Portfolio Text -->
-                            <div class="bgimg-3 w3-display-container w3-opacity-min">
-                                <div class="w3-display-middle">
-                                    <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
-                                </div>
-                            </div>
-                            
-                            <!-- Container (Contact Section) -->
-                            <div class="w3-content w3-container w3-padding-64" id="contact">
-                                <h3 class="w3-center">WHERE I WORK</h3>
-                                <p class="w3-center"><em>I'd love your feedback!</em></p>
-                                
-                                <div class="w3-row w3-padding-32 w3-section">
-                                    <div class="w3-col m4 w3-container">
-                                        <!-- Add Google Maps -->
-                                        <div id="googleMap" class="w3-round-large w3-greyscale" style="width:100%;height:400px;"></div>
-                                    </div>
-                                    <div class="w3-col m8 w3-panel">
-                                        <div class="w3-large w3-margin-bottom">
-                                            <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Chicago, US<br>
-                                            <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +00 151515<br>
-                                            <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: mail@mail.com<br>
-                                        </div>
-                                        <p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p>
-                                        <form action="/action_page.php" target="_blank">
-                                            <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
-                                                <div class="w3-half">
-                                                    <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
-                                                        </div>
-                                                <div class="w3-half">
-                                                    <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
-                                                        </div>
-                                            </div>
-                                            <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
-                                                <button class="w3-button w3-black w3-right w3-section" type="submit">
-                                                    <i class="fa fa-paper-plane"></i> SEND MESSAGE
-                                                </button>
-                                                </form>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <!-- Footer -->
-                            <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
-                                <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-                                <div class="w3-xlarge w3-section">
-                                    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-                                    <i class="fa fa-instagram w3-hover-opacity"></i>
-                                    <i class="fa fa-snapchat w3-hover-opacity"></i>
-                                    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-                                    <i class="fa fa-twitter w3-hover-opacity"></i>
-                                    <i class="fa fa-linkedin w3-hover-opacity"></i>
-                                </div>
-                                <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
-                            </footer>
-                            
-                            <!-- Add Google Maps -->
-                            <script>
-                                function myMap()
-                                {
-                                    myCenter=new google.maps.LatLng(41.878114, -87.629798);
-                                    var mapOptions= {
-                                        center:myCenter,
-                                        zoom:12, scrollwheel: false, draggable: false,
-                                        mapTypeId:google.maps.MapTypeId.ROADMAP
-                                    };
-                                    var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
-                                    
-                                    var marker = new google.maps.Marker({
-                                                                        position: myCenter,
-                                                                        });
-                                                                        marker.setMap(map);
-                                }
-                            
-                            // Modal Image Gallery
-                            function onClick(element) {
-                                document.getElementById("img01").src = element.src;
-                                document.getElementById("modal01").style.display = "block";
-                                var captionText = document.getElementById("caption");
-                                captionText.innerHTML = element.alt;
-                            }
-                            
-                            // Change style of navbar on scroll
-                            window.onscroll = function() {myFunction()};
-                            function myFunction() {
-                                var navbar = document.getElementById("myNavbar");
-                                if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-                                    navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
-                                } else {
-                                    navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
-                                }
-                            }
-                            
-                            // Used to toggle the menu on small screens when clicking on the menu button
-                            function toggleFunction() {
-                                var x = document.getElementById("navDemo");
-                                if (x.className.indexOf("w3-show") == -1) {
-                                    x.className += " w3-show";
-                                } else {
-                                    x.className = x.className.replace(" w3-show", "");
-                                }
-                            }
-                            </script>
-                            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
-                            <!--
-                             To use this code on your website, get a free API key from Google.
-                             Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
-                             -->
-                            
-                        </body>
+
+<meta charset='UTF-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+
+<head>
+  <script type='text/javascript' src='https://code.jquery.com/jquery-latest.js'></script>
+  <script type='text/javascript' src='js/jquery.imagemaster.js'></script>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+  <title>Astalon</title>
+</head>
+
+<body onload="resize()">
+
+    <div class="province-header" style="color:#000000">
+      <h1 style="font-size:72px;font-style:italic">Astalon</h1>
+    </div>
+
+  <div>
+  <img id="astalonWorldMap" src="images/Astalon World Map.jpg"
+    style="" usemap="#astalon-province-map">
+
+<map name="astalon-province-map">
+  <area href="provinces/Dornsmere.html" province="DOR" full="Dornsmere" shape="poly" coords="347,830,377,829,434,857,524,887,725,903,778,921,752,930,713,1010,634,1046,610,1075,600,1114,605,1162,514,1164,460,1149,418,1147,413,1151,415,1067,401,1048,374,975,332,886,332,850,340,845,347,830">
+  <area href="provinces/Falinbrook.html" province="FAL" full="Falinbrook" shape="poly" coords="605,1162,514,1164,460,1149,418,1147,413,1151,396,1189,413,1264,437,1322,460,1356,457,1386,434,1399,423,1411,413,1433,415,1460,433,1487,439,1494,456,1500,515,1504,540,1501,568,1482,584,1450,614,1399,629,1360,634,1347,655,1318,704,1298,777,1288,841,1260,870,1245,888,1210,840,1168,801,1163,756,1170,717,1172,649,1162,605,1162">
+  <area href="provinces/Aquibelle.html" province="AQU" full="Aquibelle" shape="poly" coords="605,1162,600,1114,610,1075,634,1046,713,1010,752,930,778,921,832,937,886,961,985,971,1001,974,1058,989,1100,1027,1115,1049,1130,1102,1115,1113,1096,1117,1053,1135,1032,1137,962,1165,916,1200,905,1201,894,1211,878,1214,828,1234,795,1235,788,1231,765,1195,764,1170,756,1170,717,1172,649,1162,605,1162">
+  <area href="provinces/Wickhamford.html" province="WIC" full="Wickhamford" shape="poly" coords="604,897,549,893,524,890,493,877,468,880,431,860,379,833,345,834,343,815,323,801,251,772,243,750,251,655,265,615,272,567,270,547,273,527,270,493,264,475,269,448,279,466,281,478,368,584,405,592,442,623,514,630,549,589,564,555,602,507,646,470,691,444,816,419,816,460,807,535,795,577,783,617,773,635,750,667,733,675,702,702,669,724,646,741,628,762,610,812,600,848">
+  <area href="provinces/Kindleton.html" province="KIN" full="Kindleton" shape="poly" coords="605,897,601,856,609,817,617,785,637,750,654,734,741,670,755,663,773,633,864,652,908,653,948,662,975,673,991,708,986,769,974,789,950,803,926,824,890,854,860,877,842,891,784,922,729,904,680,905,641,900">
+  <area href="provinces/Fjerda.html" province="FJE" full="Fjerda" shape="poly" coords="513,628,464,624,443,622,410,593,369,583,278,472,279,462,268,443,265,419,276,393,410,295,478,247,510,230,571,215,627,190,649,184,707,185,756,186,785,192,819,199,845,212,877,232,909,287,910,299,907,320,893,351,871,376,837,407,816,414,722,438,689,443,659,461,620,491,597,510,588,528,574,539,556,571,546,593">
+  <area href="provinces/Ur-Bakhar.html" province="URB" full="Ur-Bakhar" shape="poly" coords="784,921,849,888,867,870,890,852,944,808,975,789,991,744,991,708,1007,662,1024,627,1059,512,1076,431,1134,479,1217,540,1270,593,1291,601,1341,642,1426,698,1442,721,1453,719,1443,776,1433,816,1428,911,1424,924,1408,923,1394,932,1334,976,1295,1018,1253,1031,1235,1046,1205,1058,1165,1087,1131,1103,1116,1049,1089,1019,1058,991,1025,985,1001,974,969,973,908,969,895,962,877,963,838,939,803,932">
+  <area href="provinces/Hallakerch.html" province="HAL" full="Hallakerch" shape="poly" coords="1700,352,1680,359,1640,386,1598,402,1567,425,1540,434,1485,463,1425,496,1388,519,1352,537,1323,562,1300,574,1275,595,1307,614,1332,641,1392,677,1428,700,1442,720,1453,719,1447,760,1434,808,1427,906,1422,921,1516,986,1536,992,1551,996,1590,1002,1657,1022,1682,1024,1708,1021,1724,1016,1760,1015,1780,1007,1800,996,1809,973,1813,939,1802,890,1795,863,1796,816,1794,802,1804,781,1805,749,1798,723,1774,695,1742,664,1730,651,1734,637,1734,601,1727,572,1720,549,1724,526,1728,512,1726,449,1716,396,1703,371">
+  <area href="provinces/NorthernGorge.html" province="NOR" full="Northern Gorge" shape="poly" coords="343,339,342,310,348,285,358,273,375,244,393,222,417,206,441,184,468,152,483,135,518,111,577,81,633,83,669,68,735,59,830,59,866,52,905,56,967,70,988,81,1086,91,1147,139,1169,148,1212,154,1226,164,1234,190,1230,206,1205,252,1191,286,1171,313,1158,337,1128,350,1108,359,1069,354,1032,343,1000,336,966,318,950,311,927,297,910,295,899,266,876,230,830,202,771,187,740,186,689,183,644,185,596,201,566,217,518,228,472,251,390,309">
+  <area href="provinces/WesternGorge.html" province="WES" full="Western Gorge" shape="poly" coords="1077,437,1062,495,1057,517,1028,623,1007,666,992,708,973,673,941,659,896,649,863,649,773,633,782,613,794,575,805,541,814,472,816,411,838,407,870,375,889,354,903,330,909,295,926,299,952,317,968,321,988,329,999,337,1028,343,1051,351,1084,356,1086,391">
+  <area href="provinces/Ruelan.html" province="RUE" full="Ruelan" shape="poly" coords="1076,436,1107,459,1146,490,1186,516,1219,543,1272,595,1319,565,1355,538,1408,507,1460,480,1539,437,1575,421,1597,404,1644,385,1682,359,1701,355,1710,342,1719,339,1761,336,1781,322,1822,280,1840,258,1853,219,1852,192,1844,174,1837,157,1818,146,1793,141,1770,144,1749,142,1723,144,1688,150,1663,157,1641,170,1618,186,1576,213,1539,213,1505,207,1472,202,1436,190,1385,179,1321,168,1265,161,1222,152,1226,166,1231,202,1214,233,1198,255,1192,279,1175,304,1161,329,1137,347,1123,351,1111,358,1079,356,1086,371">
+</map>
+
+<br></br>
+
+<div class="navBox">
+  <div class="navBoxChild">
+    <a href="./provinces/Falinbrook.html"><img src="./images/emblems/FalinbrookEmblem.png" style="width:100px;"></a>
+    <p>Falinbrook</p>
+  </div>
+  <div class="navBoxChild">
+    <a href="./provinces/Dornsmere.html"><img src="./images/emblems/DornsmereEmblem.png" style="width:100px;"></a>
+    <p>Dornsmere</p>
+  </div>
+  <div class="navBoxChild">
+    <a href="./provinces/Wickhamford.html"><img src="./images/emblems/WickhamfordEmblem.png" style="width:100px;"></a>
+    <p>Wickhamford</p>
+  </div>
+  <div class="navBoxChild">
+    <a href="./provinces/Fjerda.html"><img src="./images/emblems/FjerdaEmblem.png" style="width:100px;"></a>
+    <p>Fjerda</p>
+  </div>
+  <div class="navBoxChild">
+    <a href="./provinces/Kindleton.html"><img src="./images/emblems/KindletonEmblem.png" style="width:100px;"></a>
+    <p>Kindleton</p>
+  </div>
+  <div class="navBoxChild">
+    <a href="./provinces/Aquibelle.html"><img src="./images/emblems/AquibelleEmblem.png" style="width:100px;"></a>
+    <p>Aquibelle</p>
+  </div>
+  <div class="navBoxChild">
+    <a href="./provinces/NorthernGorge.html"><img src="./images/emblems/NorthernGorgeEmblem.png" style="width:100px;"></a>
+    <p>Northern Gorge</p>
+  </div>
+  <div class="navBoxChild">
+    <a href="./provinces/WesternGorge.html"><img src="./images/emblems/WesternGorgeEmblem.png" style="width:100px;"></a>
+    <p>Western Gorge</p>
+  </div>
+  <div class="navBoxChild">
+    <a href="./provinces/Ur-Bakhar.html"><img src="./images/emblems/UrBakharEmblem.png" style="width:100px;"></a>
+    <p>Ur-Bakhar</p>
+  </div>
+  <div class="navBoxChild">
+    <a href="./provinces/Hallakerch.html"><img src="./images/emblems/HallakerchEmblem.png" style="width:100px;"></a>
+    <p>Hallakerch</p>
+  </div>
+  <div class="navBoxChild">
+    <a href="./provinces/Ruelan.html"><img src="./images/emblems/RuelanEmblem.png" style="width:100px;"></a>
+    <p>Ruelan</p>
+  </div>
+</div>
+
+<script>
+var resizeTime = 50;     // total duration of the resize effect, 0 is instant
+var resizeDelay = 100;    // time to wait before checking the window size again
+
+$('img').mapster({
+mapKey: 'province',
+clickNavigate: true,
+fillOpacity: 0.2,
+areas: [{key:"FAL",tooltip:"Falinbrook",fillColor:"1F3D79"},{key:"DOR",tooltip:"Dornsmere",fillColor:"B06120"},{key:"WIC",tooltip:"Wickhamford",fillColor:"787878"},{key:"FJE",tooltip:"Fjerda",fillColor:"156624"},{key:"AQU",tooltip:"Aquibelle",fillColor:"840062"},{key:"KIN",tooltip:"Kindleton",fillColor:"970404"},{key:"NOR",tooltip:"Northern Gorge",fillColor:"7881E2"},{key:"WES",tooltip:"Western Gorge",fillColor:"312F2F"},{key:"URB",tooltip:"Ur-Bakhar",fillColor:"6D6320"},{key:"Hal",tooltip:"Hallakerch",fillColor:"206D64"},{key:"RUE",tooltip:"Ruelan",fillColor:"49206D"}
+]
+//clickNavigate: true
+});
+
+function resize() {
+     var image =  $('img'),
+        imgWidth = image.width(),
+        imgHeight = image.height()
+
+    image.mapster('resize',screen.width, screen.width*(1536/2048), 0);
+}
+
+// Track window resizing events, but only actually call the map resize when the
+// window isn't being resized any more
+
+/*function onWindowResize() {
+
+    var curWidth = $(window).width(),
+        curHeight = $(window).height(),
+        checking=false;
+    if (checking) {
+        return;
+            }
+    checking = true;
+    window.setTimeout(function() {
+        var newWidth = $(window).width(),
+           newHeight = $(window).height();
+        if (newWidth === curWidth &&
+            newHeight === curHeight) {
+            resize(newWidth,newHeight);
+        }
+        checking=false;
+    },resizeDelay );
+}
+
+$(window).bind('resize',onWindowResize);*/
+</script>
+</body>
+
 </html>

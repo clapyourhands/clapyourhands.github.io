@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<meta charset='UTF-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+
+<head>
+  <script type='text/javascript' src='https://code.jquery.com/jquery-latest.js'></script>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+  <title>Fjerda</title>
+</head>
+
+<body>
+  <section style="position:relatve">
+    <div class="img-wrapper">
+      <form action="../index.html" style="z-index:3;position: absolute;" >
+        <button id="waryBut" class="w3-button w3-black" onclick="defPers(2)">
+          <span class="wsite-button-inner">Go Back</span>
+        </button>
+      </form>
+      <div style="background-image:linear-gradient(rgba(0, 0, 0, 0.0),rgba(0, 0, 0, 0.0)),url()"></div>
+      <div class="front" style="background-image:linear-gradient(rgba(0, 0, 0, 0.0),rgba(0, 0, 0, 0.0)),url(../images/bg-images/WesternGorge_img.jpeg);">
+      </div>
+    </div>
+    <div class="bg-emblem">
+      <img id="westernGorge_emblem" src="../images/emblems/WesternGorgeEmblem.png" style="width:150px;">
+    </div>
+    <div class="bg-text" style="color:#312F2F">
+      <h1>Western Gorge</h1>
+      <p style="font-size:24px;font-style:italic">The Vast Divide</p>
+      <img id="div_img" src="../images/divider.jpeg" style="width:100%;">
+    </div>
+    <div id="gradient">
+    </div>
+  </section>
+
+  <div class="province-text" style="color:#312F2F">
+    <p>The Western Gorge Province is largely uninhabited, save for the small, sleepy town of Tellston (not shown) and the Kotami peoples of the northeastern canyons. The province in ancient times used to be home to the illustrious Tellari civilization, whose ruins still dot the Tellari Desert. Much of Tellston's economy is based upon tourism to these ruins as well as the selling of artifacts to tourists and wealthy aristocrats. The Tellari built the massive Tellari Gate to keep out foreign invaders; however, the only people living on the other side of the gate today are the peaceful Kotami. The Kotami carve out homes within the deep canyons of Sundering Gorge. They are self-isolating and have an elaborate social stratification system in which the upper-class literally dwell at the higher, sunlit altitudes while the poor survive in the darker depths. Thanks to their unique dwellings, Sakhin raiders to their southeast cannot do much harm to them while mounted on their horses.</p>
+    <br></br>
+  </div>
+  <div class="province-img" style="position:relative">
+    <img id="div_img" src="../images/province-images/Western Gorge.jpg" style="width:600px;  border-bottom:5px ridge #312F2F; border-top:5px ridge #312F2F;">
+  </div>
+
+  <br></br>
+
+  <div class="province-header" style="color:#312F2F">
+    <img id="div_img" src="../images/divider.jpeg" style="width:50%;display:block">
+    <br></br>
+    <h1 style="font-size:24px;font-style:italic">Tellari Ruins</h1>
+  </div>
+
+  <div class="province-text" style="color:#312F2F">
+    <p>Little is known of the Tellari civilization, and what has been discovered has largely been already ransacked by tomb raiders. The Sankun Stele is the only major, intact artifact that has been uncovered to date.</p>
+    <br></br>
+  </div>
+  <div class="province-img" style="position:relative">
+    <img id="div_img" src="../images/landmark_img/TellariRuins.jpeg" style="width:600px;  border-bottom:5px ridge #312F2F; border-top:5px ridge #312F2F;">
+  </div>
+
+  <br></br>
+
+  <div class="province-header" style="color:#312F2F">
+    <img id="div_img" src="../images/divider.jpeg" style="width:50%;display:block">
+    <br></br>
+    <h1 style="font-size:24px;font-style:italic">Sundering Gorge</h1>
+  </div>
+
+  <div class="province-text" style="color:#312F2F">
+    <p>No geographical feature dominates the continent more than Sundering Gorge. Splitting the land in two, the chasm separates east from west as well as any ocean.</p>
+    <br></br>
+  </div>
+  <div class="province-img" style="position:relative">
+    <img id="div_img" src="../images/landmark_img/SunderingGorge.jpeg" style="width:600px;  border-bottom:5px ridge #312F2F; border-top:5px ridge #312F2F;">
+  </div>
+
+  <br></br>
+
+  <div class="province-header" style="color:#312F2F">
+    <img id="div_img" src="../images/divider.jpeg" style="width:50%;display:block">
+    <br></br>
+    <h1 style="font-size:24px;font-style:italic">Kotami Canyons</h1>
+  </div>
+
+  <div class="province-text" style="color:#312F2F">
+    <p>The Kotami are the only people that can truly call the Sundering Gorge home. Trading with merchants from Wickhamford and Kindleton, they make their livings primarily as skilled craftsmen.</p>
+    <br></br>
+  </div>
+  <div class="province-img" style="position:relative">
+    <img id="div_img" src="../images/landmark_img/KotamiCanyons.jpeg" style="width:600px;  border-bottom:5px ridge #312F2F; border-top:5px ridge #312F2F;">
+  </div>
+
+  <br></br>
+
+  <div class="province-header" style="color:#312F2F">
+    <img id="div_img" src="../images/divider.jpeg" style="width:50%;display:block">
+    <br></br>
+  </div>
+
+  <br></br>
+
+  <div class="navBox">
+    <div class="navBoxChild">
+      <a href="./NorthernGorge.html"><img src="../images/emblems/NorthernGorgeEmblem.png" style="width:100px;"></a>
+      <p>North to the Northern Gorge</p>
+    </div>
+    <div class="navBoxChild">
+      <a href="./Ur-Bakhar.html"><img src="../images/emblems/UrBakharEmblem.png" style="width:100px;"></a>
+      <p>East to Ur-Bakhar</p>
+    </div>
+    <div class="navBoxChild">
+      <a href="./Kindleton.html"><img src="../images/emblems/KindletonEmblem.png" style="width:100px;"></a>
+      <p>South to Kindleton</p>
+    </div>
+    <div class="navBoxChild">
+      <a href="./Wickhamford.html"><img src="../images/emblems/WickhamfordEmblem.png" style="width:100px;"></a>
+      <p>West to Wickhamford</p>
+    </div>
+  </div>
+
+  <script>
+  const checkpoint = 300;
+
+  window.addEventListener("scroll", () => {
+    const currentScroll = window.pageYOffset;
+    if (currentScroll <= checkpoint) {
+      opacity = 1 - currentScroll / checkpoint;
+    } else {
+      opacity = 0;
+    }
+    document.querySelector(".front").style.opacity = opacity;
+  });
+  </script>
+</body>
+
+</html>

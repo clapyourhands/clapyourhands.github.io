@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<meta charset='UTF-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+
+<head>
+  <script type='text/javascript' src='https://code.jquery.com/jquery-latest.js'></script>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+  <title>Falinbrook</title>
+</head>
+
+<body>
+  <section style="position:relatve">
+    <div class="img-wrapper">
+      <form action="../index.html" style="z-index:3;position: absolute;" >
+        <button id="waryBut" class="w3-button w3-black" onclick="defPers(2)">
+          <span class="wsite-button-inner">Go Back</span>
+        </button>
+      </form>
+      <div style="background-image:linear-gradient(rgba(0, 0, 0, 0.0),rgba(0, 0, 0, 0.0)),url()"></div>
+      <div class="front" style="background-image:linear-gradient(rgba(0, 0, 0, 0.0),rgba(0, 0, 0, 0.0)),url(../images/bg-images/Falinbrook_img.jpeg);">
+      </div>
+    </div>
+    <div class="bg-emblem">
+      <img id="falinbrook_emblem" src="../images/emblems/FalinbrookEmblem.png" style="width:150px;">
+    </div>
+    <div class="bg-text" style="color:#1F3D79">
+      <h1>Falinbrook</h1>
+      <p style="font-size:24px;font-style:italic">Pearl of Astalon</p>
+      <img id="div_img" src="../images/divider.jpeg" style="width:100%;">
+    </div>
+    <div id="gradient">
+    </div>
+  </section>
+
+  <div class="province-text" style="color:#1F3D79">
+    <p>A province of merchants, Falinbrook thrives thanks to its prime location. Astalon's Tail is famous for being located at the meeting of the Dusky and Misty Seas. Satin Bay's calm waters make Lamerca an excellent port for weary merchants. On the other hand, Point Mond and Pin Island have infamous reputations for being thriving pirate nests. Sailors looking for a less raucous alternative to the bustling Lamerca may instead dock in Tottenburg, a less famous but just as profitable location. Both port towns transport their goods to Falinbrook, where they in turn are picked up by Ballyhork merchants and distributed throughout western and inland Astalon. Business in the province has recently taken a downturn due to construction of the Ailell Canal in Aquibelle Province, though it is still far from a dying market.
+    </p>
+    <br></br>
+  </div>
+  <div class="province-img" style="position:relative">
+    <img id="div_img" src="../images/province-images/Falinbrook.jpg" style="width:600px;  border-bottom:5px ridge #1F3D79; border-top:5px ridge #1F3D79;">
+  </div>
+
+  <br></br>
+
+  <div class="province-header" style="color:#1F3D79">
+    <img id="div_img" src="../images/divider.jpeg" style="width:50%;display:block">
+    <br></br>
+    <h1 style="font-size:24px;font-style:italic">Satin Bay</h1>
+  </div>
+
+  <div class="province-text" style="color:#1F3D79">
+    <p>The calm Satin Bay is western Astalon's main port. Even ships passing to other harbors will make a stop at Lamerca for a taste of its more earthly pleasures.</p>
+    <br></br>
+  </div>
+  <div class="province-img" style="position:relative">
+    <img id="div_img" src="../images/landmark_img/SatinBay.jpeg" style="width:600px;  border-bottom:5px ridge #1F3D79; border-top:5px ridge #1F3D79;">
+  </div>
+
+  <br></br>
+
+  <div class="province-header" style="color:#1F3D79">
+    <img id="div_img" src="../images/divider.jpeg" style="width:50%;display:block">
+    <br></br>
+    <h1 style="font-size:24px;font-style:italic">Astalon's Tail</h1>
+  </div>
+
+  <div class="province-text" style="color:#1F3D79">
+    <p>A long, curved headland that protects Satin Bay from rough waters. Pin Island and Point Mond are both well-known pirate nests who take advantage of the peninsula's unpredictable conditions.</p>
+    <br></br>
+  </div>
+  <div class="province-img" style="position:relative">
+    <img id="div_img" src="../images/landmark_img/AstalonsTail.jpeg" style="width:600px;  border-bottom:5px ridge #1F3D79; border-top:5px ridge #1F3D79;">
+  </div>
+
+  <br></br>
+
+  <div class="province-header" style="color:#1F3D79">
+    <img id="div_img" src="../images/divider.jpeg" style="width:50%;display:block">
+    <br></br>
+    <h1 style="font-size:24px;font-style:italic">Misty Sea</h1>
+  </div>
+
+  <div class="province-text" style="color:#1F3D79">
+    <p>Thick fog routinely rolls in from the south of Astalon, giving the Misty Sea its name. Far to the southwest is the mysterious continent of Zemena.</p>
+    <br></br>
+  </div>
+  <div class="province-img" style="position:relative">
+    <img id="div_img" src="../images/landmark_img/MistySea.jpeg" style="width:600px;  border-bottom:5px ridge #1F3D79; border-top:5px ridge #1F3D79;">
+  </div>
+
+  <br></br>
+
+  <div class="province-header" style="color:#840062">
+    <img id="div_img" src="../images/divider.jpeg" style="width:50%;display:block">
+    <br></br>
+  </div>
+
+  <br></br>
+
+  <div class="navBox">
+    <div class="navBoxChild">
+      <a href="./Dornsmere.html"><img src="../images/emblems/DornsmereEmblem.png" style="width:100px;"></a>
+      <p>North to Dornsmere</p>
+    </div>
+  </div>
+
+  <script>
+  const checkpoint = 300;
+
+  window.addEventListener("scroll", () => {
+    const currentScroll = window.pageYOffset;
+    if (currentScroll <= checkpoint) {
+      opacity = 1 - currentScroll / checkpoint;
+    } else {
+      opacity = 0;
+    }
+    document.querySelector(".front").style.opacity = opacity;
+  });
+  </script>
+</body>
+
+</html>
